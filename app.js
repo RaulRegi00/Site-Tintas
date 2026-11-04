@@ -17,25 +17,35 @@
     return "https://wa.me/" + WPP + "?text=" + encodeURIComponent(texto);
   }
 
+  function botaoCor([nome, hex, linhas], tipo, textura) {
+    const selos = linhas
+      ? '<span class="selos">' +
+        [...linhas]
+          .map((l) => `<i class="sel sel--${l}" title="${NOMES_LINHA[l]}"></i>`)
+          .join("") +
+        "</span>"
+      : "";
+    const tx = textura ? ` textura--${textura}` : "";
+    return `<li><button class="cor" data-nome="${nome}" data-hex="${hex}" data-linhas="${linhas || ""}" data-tipo="${tipo}" data-textura="${textura || ""}">
+      <span class="cor__amostra${tx}" style="background-color:${hex}"></span>
+      <span class="cor__nome">${nome}${selos}</span>
+    </button></li>`;
+  }
+
   function render() {
     const grupo = CARTELA[tipoAtual];
     filtrosEl.hidden = tipoAtual !== "acrilica";
-    const cores = grupo.cores.filter(
-      (c) => !linhaAtual || (c[2] || "").includes(linhaAtual)
-    );
-    cartelaEl.innerHTML = cores
-      .map(([nome, hex, linhas]) => {
-        const selos = linhas
-          ? '<span class="selos">' +
-            [...linhas]
-              .map((l) => `<i class="sel sel--${l}" title="${NOMES_LINHA[l]}"></i>`)
-              .join("") +
-            "</span>"
+    const secoes = grupo.secoes || [{ titulo: grupo.titulo, cores: grupo.cores }];
+    const comTitulos = secoes.length > 1 || grupo.secoes;
+    cartelaEl.innerHTML = secoes
+      .map((sec) => {
+        const cores = sec.cores.filter(
+          (c) => !linhaAtual || (c[2] || "").includes(linhaAtual)
+        );
+        const cab = comTitulos
+          ? `<h3 class="cartela__titulo">${sec.titulo}${sec.subtitulo ? `<small>${sec.subtitulo}</small>` : ""}</h3>`
           : "";
-        return `<li><button class="cor" data-nome="${nome}" data-hex="${hex}" data-linhas="${linhas || ""}">
-          <span class="cor__amostra" style="background:${hex}"></span>
-          <span class="cor__nome">${nome}${selos}</span>
-        </button></li>`;
+        return cab + `<ul class="cartela">${cores.map((c) => botaoCor(c, sec.titulo, sec.textura)).join("")}</ul>`;
       })
       .join("");
     notaEl.textContent = grupo.nota;
@@ -69,19 +79,20 @@
     cartelaEl.querySelectorAll(".cor[aria-pressed]").forEach((b) => b.removeAttribute("aria-pressed"));
     btn.setAttribute("aria-pressed", "true");
 
-    const { nome, hex, linhas } = btn.dataset;
-    const tipo = CARTELA[tipoAtual].titulo;
+    const { nome, hex, linhas, tipo, textura } = btn.dataset;
     let linhaTxt = "";
     if (linhas) {
       linhaTxt = linhaAtual
         ? " (linha " + NOMES_LINHA[linhaAtual] + ")"
         : " (disponível em: " + [...linhas].map((l) => NOMES_LINHA[l]).join(", ") + ")";
     }
-    document.getElementById("escolhaAmostra").style.background = hex;
+    const amostra = document.getElementById("escolhaAmostra");
+    amostra.className = "escolha__amostra" + (textura ? " textura--" + textura : "");
+    amostra.style.backgroundColor = hex;
     document.getElementById("escolhaTipo").textContent = tipo + linhaTxt;
     document.getElementById("escolhaNome").textContent = nome;
     document.getElementById("escolhaLink").href = linkWpp(
-      `Olá! Vim pelo site e gostaria de um orçamento da cor *${nome}*, ${tipo}${linhaTxt}.`
+      `Olá! Vim pelo site e gostaria de um orçamento: *${nome}*, ${tipo}${linhaTxt}.`
     );
     escolha.hidden = false;
     flutuante.classList.add("escondido");

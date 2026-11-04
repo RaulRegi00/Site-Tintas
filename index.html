@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Casa da Tinta | Loja de tintas no Violim, Londrina - PR</title>
-  <meta name="description" content="Casa da Tinta: tintas acrílicas Premium, Standard e Econômica, impermeabilizante para telhas, tinta para piso, rolos, pincéis, fita crepe, spray, gesso, estopa e corante Xadrez no Conj. Hab. Violim, Londrina - PR. Peça seu orçamento pelo WhatsApp.">
+  <meta name="description" content="Casa da Tinta: tintas acrílicas Premium, Standard e Econômica, esmalte sintético, verniz para madeira, impermeabilizante para telhas, tinta para piso, rolos, pincéis, fita crepe, spray, gesso, estopa e corante Xadrez no Conj. Hab. Violim, Londrina - PR. Peça seu orçamento pelo WhatsApp.">
   <meta name="theme-color" content="#1f2a44">
   <meta property="og:title" content="Casa da Tinta | Londrina - PR">
-  <meta property="og:description" content="Tintas acrílicas, impermeabilizante para telhas e tinta para piso. Orçamento pelo WhatsApp.">
+  <meta property="og:description" content="Tintas acrílicas, esmaltes, vernizes, impermeabilizante para telhas e tinta para piso. Orçamento pelo WhatsApp.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -63,7 +63,7 @@
       <div class="hero__texto">
         <p class="sobretitulo">Loja de tintas no Violim · Londrina - PR</p>
         <h1>A cor certa pra sua casa, <span class="destaque">pertinho de você.</span></h1>
-        <p class="hero__lead">Tintas acrílicas nas linhas Premium, Standard e Econômica, impermeabilizante para telhas, tinta para piso e os acessórios para a pintura. Escolha a cor no site e peça o orçamento direto no WhatsApp.</p>
+        <p class="hero__lead">Tintas acrílicas nas linhas Premium, Standard e Econômica, esmaltes, vernizes, impermeabilizante para telhas, tinta para piso e os acessórios para a pintura. Escolha a cor no site e peça o orçamento direto no WhatsApp.</p>
         <div class="hero__acoes">
           <a class="btn btn--wpp" href="https://wa.me/554330277157?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wpp"/></svg>
@@ -82,7 +82,7 @@
 
   <section class="faixa">
     <div class="container faixa__grid">
-      <div><strong>+70 cores</strong><span>na cartela Londres Color</span></div>
+      <div><strong>+100 cores</strong><span>na cartela Londres Color</span></div>
       <div><strong>3 linhas</strong><span>Premium, Standard e Econômica</span></div>
       <div><strong>Atendimento</strong><span>no balcão e pelo WhatsApp</span></div>
     </div>
@@ -100,6 +100,8 @@
         <button role="tab" class="aba" data-tipo="acrilica" aria-selected="true">Tinta Acrílica</button>
         <button role="tab" class="aba" data-tipo="telha" aria-selected="false">Impermeabilizante Telha</button>
         <button role="tab" class="aba" data-tipo="piso" aria-selected="false">Tinta Piso</button>
+        <button role="tab" class="aba" data-tipo="esmalte" aria-selected="false">Esmalte</button>
+        <button role="tab" class="aba" data-tipo="verniz" aria-selected="false">Verniz</button>
       </div>
 
       <div class="filtros" id="filtros" aria-label="Filtrar por linha">
@@ -109,7 +111,7 @@
         <button class="chip" data-linha="E" aria-pressed="false"><i class="sel sel--E"></i>Econômica</button>
       </div>
 
-      <ul class="cartela" id="cartela" aria-live="polite"></ul>
+      <div id="cartela" aria-live="polite"></div>
       <p class="cartela__nota" id="nota"></p>
       <p class="aviso">As cores na tela são aproximadas e podem variar conforme o aparelho. Confira a cartela física na loja antes de comprar.</p>
     </div>
@@ -143,6 +145,18 @@
           <h3>Tinta Piso</h3>
           <p>Para garagens, calçadas e quadras, com cores para demarcação, como amarelo e vermelho segurança.</p>
           <a class="link" href="#cores" data-ir="piso">Ver cores de piso →</a>
+        </article>
+        <article class="card">
+          <div class="card__faixa" style="--c1:#F2A516;--c2:#1F5A9C;--c3:#9C7F5A"></div>
+          <h3>Esmalte</h3>
+          <p>Para portões, grades, janelas e madeira. Sintético, Pintcolor e Óleo com alto brilho e secagem rápida, além das versões metálica e especial (fosco e acetinado).</p>
+          <a class="link" href="#cores" data-ir="esmalte">Ver cores de esmalte →</a>
+        </article>
+        <article class="card">
+          <div class="card__faixa" style="--c1:#E8901E;--c2:#A82A24;--c3:#4E1E1C"></div>
+          <h3>Verniz para Madeira</h3>
+          <p>Protege e realça portas, móveis e decks. Incolor brilhante ou fosco, acetinado, stain impregnante, P.U. e tons como mogno, imbuia e nogueira.</p>
+          <a class="link" href="#cores" data-ir="verniz">Ver tons de verniz →</a>
         </article>
       </div>
 

@@ -92,3 +92,88 @@ const CARTELA = {
     ],
   },
 };
+
+CARTELA.esmalte = {
+  titulo: "Esmalte",
+  nota: "",
+  secoes: [
+    {
+      titulo: "Esmalte Sintético / Pintcolor / Óleo",
+      subtitulo: "Alto brilho · secagem rápida",
+      cores: [
+        ["Branco", "#F8F8F6"],
+        ["Gelo", "#E8E4DC"],
+        ["Marfim", "#EDE3C8"],
+        ["Areia", "#EBDDBF"],
+        ["Palha", "#F1E3B8"],
+        ["Camurça", "#C9A878"],
+        ["Platina", "#A9ACA0"],
+        ["Cinza Médio", "#8C9590"],
+        ["Cinza Escuro", "#2F3433"],
+        ["Amarelo Ouro", "#F2A516"],
+        ["Laranja", "#E8742A"],
+        ["Vermelho", "#B5172B"],
+        ["Colorado", "#8E1E22"],
+        ["Vinho Chassi", "#6E1E23"],
+        ["Marrom Conhaque", "#8A4520"],
+        ["Tabaco", "#4A2E20"],
+        ["Marrom", "#3E2A25"],
+        ["Verde Piscina", "#6CC29A"],
+        ["Verde Limão", "#6CCB5A"],
+        ["Verde Folha", "#11683A"],
+        ["Verde Colonial", "#1F4A3A"],
+        ["Azul Celeste", "#8ED3C8"],
+        ["Azul Mar", "#1E9BC9"],
+        ["Azul França", "#1F5A9C"],
+        ["Azul Del Rey", "#1E2A55"],
+        ["Preto", "#1E1E20"],
+      ],
+    },
+    {
+      titulo: "Esmalte Metálico",
+      textura: "metal",
+      cores: [
+        ["Alumínio", "#C2C3C1"],
+        ["Ouro Antigo", "#9C8462"],
+        ["Avelã", "#B6A47E"],
+        ["Dourado", "#B8A578"],
+        ["Bronze", "#9C7F5A"],
+        ["Ouro", "#8C7B5A"],
+        ["Marrom Bronze", "#6E6656"],
+        ["Castanho", "#4B4339"],
+      ],
+    },
+    {
+      titulo: "Esmalte Especial",
+      cores: [
+        ["Branco Fosco", "#F4F1E6"],
+        ["Branco Acetinado", "#EFEAE0"],
+        ["Grafite Claro Fosco", "#5C6260"],
+        ["Grafite Escuro Fosco", "#4A4F4E"],
+        ["Preto Fosco", "#1E2126"],
+      ],
+    },
+  ],
+};
+
+CARTELA.verniz = {
+  titulo: "Verniz para Madeira",
+  nota: "",
+  secoes: [
+    {
+      titulo: "Verniz para Madeira",
+      textura: "madeira",
+      cores: [
+        ["Incolor Brilhante", "#E8901E"],
+        ["Incolor Fosco", "#E79A3A"],
+        ["Acetinado", "#E69A2C"],
+        ["Stain Impregnante", "#E4901C"],
+        ["P.U. (Mono Comp.)", "#E98E1A"],
+        ["Canela", "#B5652A"],
+        ["Mogno", "#A82A24"],
+        ["Imbuia", "#6A1E24"],
+        ["Nogueira", "#4E1E1C"],
+      ],
+    },
+  ],
+};
