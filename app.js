@@ -112,6 +112,17 @@
     )
     .join("");
 
+  // Links internos (#cores, #onde...) rolam até a seção sem alterar a URL
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    const id = a.getAttribute("href").slice(1);
+    const alvo = id ? document.getElementById(id) : null;
+    if (!alvo) return;
+    e.preventDefault();
+    alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
   document.getElementById("ano").textContent = new Date().getFullYear();
   render();
 })();
