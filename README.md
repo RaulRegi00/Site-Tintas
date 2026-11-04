@@ -28,4 +28,4 @@ Basta abrir o `index.html` no navegador.
 ## Editar dados
 
 - WhatsApp: procure por `554330277157` em `index.html` e `app.js`.
-- Horário: procure por `8h às 18h` em `index.html` e ajuste `openingHours` no bloco JSON-LD do topo.
+- Horário: procure por `8h` em `index.html` (topo, "Como comprar" e "Onde estamos") e ajuste `openingHours` no bloco JSON-LD do topo.

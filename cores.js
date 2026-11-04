@@ -169,7 +169,7 @@ CARTELA.verniz = {
         ["Acetinado", "#E69A2C"],
         ["Stain Impregnante", "#E4901C"],
         ["P.U. (Mono Comp.)", "#E98E1A"],
-        ["Canela", "#B5652A"],
+        ["Cerejeira", "#B5652A"],
         ["Mogno", "#A82A24"],
         ["Imbuia", "#6A1E24"],
         ["Nogueira", "#4E1E1C"],
