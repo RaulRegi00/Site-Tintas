@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa da Tinta | Loja de tintas no Violim, Londrina - PR</title>
+  <meta name="description" content="Casa da Tinta: tintas acrílicas Premium, Standard e Econômica, impermeabilizante para telhas e tinta para piso no Conj. Hab. Violim, Londrina - PR. Peça seu orçamento pelo WhatsApp.">
+  <meta name="theme-color" content="#1f2a44">
+  <meta property="og:title" content="Casa da Tinta | Londrina - PR">
+  <meta property="og:description" content="Tintas acrílicas, impermeabilizante para telhas e tinta para piso. Orçamento pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HardwareStore",
+    "name": "Casa da Tinta",
+    "telephone": "+55 43 3027-7157",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Azulão, 97 - Conj. Hab. Violim",
+      "addressLocality": "Londrina",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 08:00-18:00"
+  }
+  </script>
+</head>
+<body>
+
+<header class="topo">
+  <div class="container topo__inner">
+    <a href="#inicio" class="marca" aria-label="Casa da Tinta, início">
+      <svg class="marca__icone" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M6 18 20 6l14 12v15a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1z" fill="var(--azul)"/>
+        <path d="M6 18 20 6l14 12" fill="none" stroke="var(--laranja)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M20 17c-3 4.2-4.5 6.8-4.5 8.8a4.5 4.5 0 0 0 9 0c0-2-1.5-4.6-4.5-8.8z" fill="var(--amarelo)"/>
+      </svg>
+      <span class="marca__nome">Casa da <strong>Tinta</strong></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#cores">Cores</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#onde">Onde estamos</a>
+    </nav>
+    <a class="btn btn--wpp btn--pequeno" href="https://wa.me/554330277157?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wpp"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__texto">
+        <p class="sobretitulo">Loja de tintas no Violim · Londrina - PR</p>
+        <h1>A cor certa pra sua casa, <span class="destaque">pertinho de você.</span></h1>
+        <p class="hero__lead">Tintas acrílicas nas linhas Premium, Standard e Econômica, impermeabilizante para telhas e tinta para piso. Escolha a cor no site e peça o orçamento direto no WhatsApp.</p>
+        <div class="hero__acoes">
+          <a class="btn btn--wpp" href="https://wa.me/554330277157?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wpp"/></svg>
+            Pedir orçamento
+          </a>
+          <a class="btn btn--contorno" href="#cores">Ver cartela de cores</a>
+        </div>
+        <ul class="hero__info">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-relogio"/></svg> 8h às 18h</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-pin"/></svg> R. Azulão, 97 - Violim</li>
+        </ul>
+      </div>
+      <div class="leque" aria-hidden="true" id="leque"></div>
+    </div>
+  </section>
+
+  <section class="faixa">
+    <div class="container faixa__grid">
+      <div><strong>+70 cores</strong><span>na cartela Londres Color</span></div>
+      <div><strong>3 linhas</strong><span>Premium, Standard e Econômica</span></div>
+      <div><strong>Atendimento</strong><span>no balcão e pelo WhatsApp</span></div>
+    </div>
+  </section>
+
+  <section id="cores" class="secao">
+    <div class="container">
+      <div class="secao__cabeca">
+        <p class="sobretitulo">Cartela de cores</p>
+        <h2>Escolha sua cor</h2>
+        <p>Toque em uma cor para pedir o orçamento dela pelo WhatsApp.</p>
+      </div>
+
+      <div class="abas" role="tablist" aria-label="Tipo de tinta">
+        <button role="tab" class="aba" data-tipo="acrilica" aria-selected="true">Tinta Acrílica</button>
+        <button role="tab" class="aba" data-tipo="telha" aria-selected="false">Impermeabilizante Telha</button>
+        <button role="tab" class="aba" data-tipo="piso" aria-selected="false">Tinta Piso</button>
+      </div>
+
+      <div class="filtros" id="filtros" aria-label="Filtrar por linha">
+        <button class="chip" data-linha="" aria-pressed="true">Todas</button>
+        <button class="chip" data-linha="P" aria-pressed="false"><i class="sel sel--P"></i>Premium</button>
+        <button class="chip" data-linha="S" aria-pressed="false"><i class="sel sel--S"></i>Standard</button>
+        <button class="chip" data-linha="E" aria-pressed="false"><i class="sel sel--E"></i>Econômica</button>
+      </div>
+
+      <ul class="cartela" id="cartela" aria-live="polite"></ul>
+      <p class="cartela__nota" id="nota"></p>
+      <p class="aviso">As cores na tela são aproximadas e podem variar conforme o aparelho. Confira a cartela física na loja antes de comprar.</p>
+    </div>
+  </section>
+
+  <section id="produtos" class="secao secao--clara">
+    <div class="container">
+      <div class="secao__cabeca">
+        <p class="sobretitulo">Produtos</p>
+        <h2>Tinta para cada parte da obra</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__faixa" style="--c1:#E2CDB6;--c2:#9A6A55;--c3:#2C5DA5"></div>
+          <h3>Tinta Acrílica</h3>
+          <p>Para paredes internas e externas. Disponível em três linhas, para você escolher o equilíbrio entre acabamento e preço.</p>
+          <ul class="linhas">
+            <li><i class="sel sel--P"></i><b>Premium</b> mais opções de cor e o melhor acabamento</li>
+            <li><i class="sel sel--S"></i><b>Standard</b> ótimo custo-benefício</li>
+            <li><i class="sel sel--E"></i><b>Econômica</b> para quem quer economizar</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="card__faixa" style="--c1:#D9612F;--c2:#B8291F;--c3:#3A3D42"></div>
+          <h3>Impermeabilizante Telha</h3>
+          <p>Protege e renova o telhado. São 11 cores, do cerâmica natural ao grafite escuro.</p>
+          <a class="link" href="#cores" data-ir="telha">Ver cores de telha →</a>
+        </article>
+        <article class="card">
+          <div class="card__faixa" style="--c1:#8F8F8B;--c2:#C98A35;--c3:#3E5A43"></div>
+          <h3>Tinta Piso</h3>
+          <p>Para garagens, calçadas e quadras, com cores para demarcação, como amarelo e vermelho segurança.</p>
+          <a class="link" href="#cores" data-ir="piso">Ver cores de piso →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container">
+      <div class="secao__cabeca">
+        <p class="sobretitulo">Como comprar</p>
+        <h2>Simples assim</h2>
+      </div>
+      <ol class="passos">
+        <li><span>1</span><h3>Escolha a cor</h3><p>Use a cartela acima ou venha ver as amostras na loja.</p></li>
+        <li><span>2</span><h3>Mande no WhatsApp</h3><p>Diga a cor, a linha e o tamanho do ambiente. A gente calcula quanto você precisa.</p></li>
+        <li><span>3</span><h3>Retire na loja</h3><p>R. Azulão, 97, no Violim, das 8h às 18h.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="onde" class="secao secao--escura">
+    <div class="container onde">
+      <div class="onde__texto">
+        <p class="sobretitulo">Onde estamos</p>
+        <h2>Venha nos visitar</h2>
+        <ul class="contato">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-pin"/></svg><div><b>Endereço</b>R. Azulão, 97 - Conj. Hab. Violim<br>Londrina - PR</div></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-relogio"/></svg><div><b>Horário</b>Das 8h às 18h</div></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-tel"/></svg><div><b>Telefone e WhatsApp</b><a href="tel:+554330277157">(43) 3027-7157</a></div></li>
+        </ul>
+        <div class="hero__acoes">
+          <a class="btn btn--wpp" href="https://wa.me/554330277157" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wpp"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a class="btn btn--contorno btn--claro" href="https://www.google.com/maps/search/?api=1&query=R.+Azul%C3%A3o%2C+97+-+Conj.+Hab.+Violim%2C+Londrina+-+PR" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+      <div class="mapa">
+        <iframe title="Mapa: Casa da Tinta, R. Azulão, 97, Londrina" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=R.+Azul%C3%A3o,+97+-+Conj.+Hab.+Violim,+Londrina+-+PR&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="container rodape__inner">
+    <span>© <span id="ano">2026</span> Casa da Tinta · Londrina - PR</span>
+    <span>Revendedor Tintas Londres Color</span>
+  </div>
+</footer>
+
+<!-- Barra que aparece ao escolher uma cor -->
+<div class="escolha" id="escolha" hidden>
+  <span class="escolha__amostra" id="escolhaAmostra"></span>
+  <div class="escolha__texto">
+    <small id="escolhaTipo"></small>
+    <strong id="escolhaNome"></strong>
+  </div>
+  <a class="btn btn--wpp" id="escolhaLink" href="#" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wpp"/></svg>
+    <span>Pedir esta cor</span>
+  </a>
+  <button class="escolha__fechar" id="escolhaFechar" aria-label="Fechar">×</button>
+</div>
+
+<a class="wpp-flutuante" id="wppFlutuante" href="https://wa.me/554330277157?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wpp"/></svg>
+</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ic-wpp" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="ic-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ic-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+</svg>
+
+<script src="cores.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
