@@ -112,6 +112,33 @@
     )
     .join("");
 
+  // Acessórios e materiais
+  const ICONES = {
+    rolo: '<rect x="3" y="3" width="15" height="6" rx="2"/><path d="M18 6h2v6h-8v3"/><rect x="10.5" y="15" width="3" height="6" rx="1"/>',
+    pincel: '<path d="M9 3h6v8H9z"/><path d="M8 11h8v3a4 4 0 0 1-4 4 4 4 0 0 1-4-4z"/><path d="M12 18v3"/>',
+    suporte: '<path d="M6 3h12v6H6z"/><path d="M12 9v12"/><path d="M9 21h6"/>',
+    fita: '<circle cx="11" cy="12" r="8"/><circle cx="11" cy="12" r="3.5"/><path d="M11 20h10"/>',
+    spray: '<rect x="7" y="8" width="9" height="13" rx="2"/><path d="M9 8V5h5v3"/><path d="M11 5V3h3"/><path d="M18 3h.01M20 5h.01M18 7h.01"/>',
+    gesso: '<path d="M4 9h16l-2 12H6z"/><path d="M4 9l3-5h10l3 5"/>',
+    estopa: '<path d="M4 15c2-6 6-2 8-6s6-2 8 2"/><path d="M4 19c3-4 6-1 9-4s5-1 7 1"/><path d="M5 11c2-3 4-2 6-4"/>',
+    corante: '<path d="M12 3c-3 4.5-6 8-6 11a6 6 0 0 0 12 0c0-3-3-6.5-6-11z"/>',
+  };
+  const ITENS = [
+    ["Rolos", "rolo"],
+    ["Pincéis", "pincel"],
+    ["Suporte de rolo", "suporte"],
+    ["Fita crepe", "fita"],
+    ["Tinta spray", "spray"],
+    ["Gesso", "gesso"],
+    ["Estopa", "estopa"],
+    ["Corante Xadrez", "corante"],
+  ];
+  document.getElementById("itens").innerHTML = ITENS.map(
+    ([nome, ic]) => `<li><a class="item" target="_blank" rel="noopener"
+      href="${linkWpp(`Olá! Vim pelo site. Vocês têm ${nome.toLowerCase().replace("xadrez", "Xadrez")}?`)}">
+      <svg viewBox="0 0 24 24" aria-hidden="true">${ICONES[ic]}</svg><span>${nome}</span></a></li>`
+  ).join("");
+
   // Links internos (#cores, #onde...) rolam até a seção sem alterar a URL
   document.addEventListener("click", (e) => {
     const a = e.target.closest('a[href^="#"]');
