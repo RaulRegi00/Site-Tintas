@@ -177,3 +177,64 @@ CARTELA.verniz = {
     },
   ],
 };
+
+CARTELA.borracha = {
+  titulo: "Borracha Líquida",
+  nota: "Branco também disponível.",
+  secoes: [
+    {
+      titulo: "Borracha Líquida Super Premium",
+      subtitulo: "Uso interno e externo",
+      cores: [
+        ["Preto Realeza", "#1E1F1F"],
+        ["Gelo", "#EEEDE6"],
+        ["Crômio", "#E3E1DA"],
+        ["Calopsita", "#E3E5E1"],
+        ["Névoa da Manhã", "#DDE0DE"],
+        ["Cinza Granizo", "#A8AAA2"],
+        ["Prata", "#C7CBC8"],
+        ["Mármore", "#CBCDC5"],
+        ["Elefante", "#8D8E82"],
+        ["Silverado", "#7F8075"],
+        ["Bristol", "#8C8D80"],
+        ["Platina", "#9EB0AA"],
+        ["Hematita", "#5B5D5B"],
+        ["Cinza Névoa", "#A9A690"],
+        ["Areia", "#ECDDBA"],
+        ["Cinza Urbano", "#A8A48E"],
+        ["Prata Envelhecido", "#8A8676"],
+        ["Havana", "#CBAA77"],
+        ["Níquel", "#8E8E8A"],
+        ["Marrom Barroco", "#6E4130"],
+        ["Nanquim", "#6F7270"],
+        ["Cinza Chumbo", "#3E4245"],
+        ["Cinza Asfalto", "#545856"],
+        ["Patativa", "#2A2C2C"],
+      ],
+    },
+  ],
+};
+
+CARTELA.revestimento = {
+  titulo: "Revestimento Granelli",
+  nota: "",
+  secoes: [
+    {
+      titulo: "Granelli Revestimento Premium",
+      subtitulo: "Acabamento texturizado",
+      textura: "granulado",
+      cores: [
+        ["Branco", "#F2F2F0"],
+        ["Bruma Bege", "#D8C48E"],
+        ["Areia", "#D6AE72"],
+        ["Camurça", "#D9A260"],
+        ["Elefante", "#A9AEB0"],
+        ["Cinza Médio", "#9A9DA3"],
+        ["Nanquim", "#8E9093"],
+        ["Cinza Chumbo", "#5E6266"],
+        ["Cinza Asfalto", "#5C5F60"],
+        ["Marrom Café", "#4A302A"],
+      ],
+    },
+  ],
+};
